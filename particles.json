@@ -1,7 +1,7 @@
 {
     "particles": {
         "number": {
-            "value": 20
+            "value": 15
         },
         "shape": {
             "type": "circle",
@@ -13,7 +13,13 @@
             "value": 3
         },
         "move": {
-            "speed": 1
+            "speed": 0.5
+        },
+        "line_linked": {
+            "enable": false
+        },
+        "opacity": {
+            "value": 0.5
         }
     }
 }
