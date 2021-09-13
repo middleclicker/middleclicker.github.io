@@ -1,0 +1,25 @@
+{
+    "particles": {
+        "number": {
+            "value": 15
+        },
+        "shape": {
+            "type": "circle",
+            "stroke": {
+                "width": 0
+            }
+        },
+        "size": {
+            "value": 3
+        },
+        "move": {
+            "speed": 0.5
+        },
+        "line_linked": {
+            "enable": false
+        },
+        "opacity": {
+            "value": 0.5
+        }
+    }
+}
