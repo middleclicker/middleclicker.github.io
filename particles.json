@@ -1,0 +1,19 @@
+{
+    "particles": {
+        "number": {
+            "value": 20
+        },
+        "shape": {
+            "type": "circle",
+            "stroke": {
+                "width": 0
+            }
+        },
+        "size": {
+            "value": 3
+        },
+        "move": {
+            "speed": 1
+        }
+    }
+}

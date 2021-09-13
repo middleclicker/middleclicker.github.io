@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Middleclicker's Website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>
+        <script src="https://unpkg.com/typeit@8.0.2/dist/index.umd.js"></script>
+        <div class="navbar">
+            <img src="Assets/Navbar/Logo.png" style="position: absolute; height: 30px; padding-top:8px; padding-left: 20px">
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#projects">Projects</a>
+            <a class="active" href="#home">Home</a>
+        </div>
+        <div class="header">
+            <div class="text-wrapper">
+                <h1 id="typewriter"></h1>
+            </div>
+
+            <div id="particles-js"></div>
+        </div>
+
+        <div class="main-content">
+        
+        <!-- Javascript -->
+        <!-- TypeIt -->
+        <script>
+            new TypeIt("#typewriter", {
+                waitUntilVisible: true,
+            })
+                .type("Hi. ")
+                .exec(async () => {
+                    //-- Return a promise that resolves after something happens.
+                    await new Promise((resolve, reject) => {
+                        setTimeout(() => {
+                            return resolve();
+                        }, 1200);
+                    });
+            })
+            .type("Welcome to my website!")
+            .go();
+        </script>
+
+        <!-- Particles Js -->
+        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+        <script>
+            particlesJS.load('particles-js', 'particles.json', function(){
+                console.log('particles.json loaded...');
+            });
+        </script>
+    </body>
+</html>
