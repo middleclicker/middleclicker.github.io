@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Middleclicker's Website | Projects</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/common.css" type="text/css">
+        <link rel="stylesheet" href="css/projects.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    </head>
+    <body>
+        <div class="navbar">
+            <img src="Assets/Navbar/Logo.png" style="position: absolute; height: 30px; padding-top:8px; padding-left: 20px">
+            <a href="/about.html">About</a>
+            <a href="/contact.html">Contact</a>
+            <a class="active"href="/projects.html">Projects</a>
+            <a href="/index.html">Home</a>
+        </div>
+
+        <div class="header">
+            <div class="text-wrapper">
+                <h1 id="typewriter"></h1>
+            </div>
+
+            <a href="#projects" class="animate__animated animate__fadeIn" id="viewprojectsbtn">View projects</a>
+
+            <div id="particles-js"></div>
+        </div>
+
+        <div class="projects" id="projects">
+            <div class="project">
+                <h1>Piano helper</h1>
+                <p>Piano helper is a application which takes in midi files and outputs them as LED signals. The only thing you need is a strip of neopixel which fits the piano and an arduino.</p>
+                <div class="fake-img">Image</div>
+            </div>
+            <div class="project">
+                <h1>Spacehack</h1>
+                <p>A utility client for minecraft version 1.12.2. Features useful modules that would give an advantage to the user over other players. Website can be found here: <a href="https://middleclicker.github.io/Spacehack/" style="color: white;" target="_blank" rel="noreferrer noopener">Spacehack website</a></p>
+                <div class="fake-img" id="spacehack"></div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-logo"></div>
+            <p class="footer-text">Copyright © 2021 by Middleclicker. All Rights Reserved.</p>
+        </div>
+
+        <!-- Javascript -->
+        <!-- Imports -->
+        <script src="https://unpkg.com/typeit@8.0.2/dist/index.umd.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+        <!-- TypeIt -->
+        <script>
+            new TypeIt("#typewriter", {
+                speed: 50,
+                waitUntilVisible: true,
+            })
+                .exec(async () => {
+                    await new Promise((resolve, reject) => {
+                        setTimeout(() => {
+                            return resolve();
+                        }, 2000);
+                    });
+                })
+                .type("This is where I keep all my projects.")
+                .go();
+        </script>
+
+        <!-- Button timeout -->
+        <script>
+            
+            document.getElementById("viewprojectsbtn").style.display = "none";
+            function showBtn() {
+                document.getElementById("viewprojectsbtn").style.display = "inline";
+            }
+            function myFunction() {
+                window.location = "projects.html"
+            }
+            setTimeout(showBtn, 5000);
+            
+        </script>
+
+        <!-- Particles Js -->
+        <script>
+            particlesJS.load('particles-js', '/particleConfigs/Bubble.json', function(){
+                console.log('particles.json loaded...');
+            });
+        </script>
+    </body>
+</html>
