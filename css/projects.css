@@ -1,6 +1,36 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* total width */
+body::-webkit-scrollbar {
+    background-color: #1f271b;
+    width: 10px;
+}
+
+/* background of the scrollbar except button or resizer */
+body::-webkit-scrollbar-track {
+    background-color: #222720;
+}
+
+/* scrollbar itself */
+body::-webkit-scrollbar-thumb {
+    background-color: #5e5e5e;
+    border-radius: 16px;
+    border: 2px solid #1f271b;
+}
+
+/* set button(top and bottom of the scrollbar) */
+body::-webkit-scrollbar-button {
+    display:none;
+}
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #2a2c2a;
+}
+
+.header {
     background-color: #2a2c2a;
 }
 
@@ -13,6 +43,7 @@ body {
     position: absolute;
 }
 
+/* View project button */
 #viewprojectsbtn {
     box-shadow:inset 0px 1px 0px 0px #ffffff;
 	background-color:#ffffff;
@@ -35,4 +66,29 @@ body {
 #viewprojectsbtn:hover {
     background-color:#f6f6f6;
     transform: scale(0.95);
+}
+
+.project {
+    color: white;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.projects {
+    padding-top: 20px;
+    padding-bottom: 20vh;
+    padding-left: 25.5%;
+    text-align: center;
+    max-width: 50%;
+}
+
+.fake-img {
+    background-color: white;
+    height: 500px;
+    border-radius: 5px;
+}
+
+#spacehack {
+    background-image: url("../Assets/Projects/EndCrystalRender.png");
+    background-position: center;
 }
