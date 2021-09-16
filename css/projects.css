@@ -5,12 +5,12 @@ html {
 /* total width */
 body::-webkit-scrollbar {
     background-color: #1f271b;
-    width: 10px
+    width: 10px;
 }
 
 /* background of the scrollbar except button or resizer */
 body::-webkit-scrollbar-track {
-    background-color: #222720
+    background-color: #222720;
 }
 
 /* scrollbar itself */

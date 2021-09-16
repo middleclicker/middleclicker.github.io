@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Middleclicker's Website | Contact</title>
+        <link rel="stylesheet" href="css/common.css" type="text/css">
+        <link rel="stylesheet" href="css/contact.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    </head>
+    <body>
+        <div class="navbar">
+            <img src="Assets/Navbar/Logo.png" style="position: absolute; height: 30px; padding-top:8px; padding-left: 20px">
+            <a href="/about.html">About</a>
+            <a class="active" href="/contact.html">Contact</a>
+            <a href="/projects.html">Projects</a>
+            <a href="/index.html">Home</a>
+        </div>
+
+        <div class="header">
+            <div class="text-wrapper">
+                <h1 id="typewriter"></h1>
+            </div>
+        
+            <div id="particles-js"></div>
+        </div>
+
+        <div class="contact-container" id="contacts">
+            <div class="contact">
+                <img src="Assets/Contact/Discord_Logo.svg" class="contact-img">
+                <p>middleclicker person#9990</p>
+            </div>
+            <div class="contact">
+                <img src="Assets/Contact/Gmail_icon.svg" style="width:50px" class="contact-img">
+                <p>cxy20052008@gmail.com</p>
+            </div>
+            <div class="contact">
+                <img src="Assets/Contact/Youtube_Logo.svg" style="width:50px" class="contact-img">
+                <p>DaHampter</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-logo"></div>
+            <p class="footer-text">Copyright © 2021 by Middleclicker. All Rights Reserved.</p>
+        </div>
+
+        <!-- Javascript -->
+        <!-- Imports -->
+        <script src="https://unpkg.com/typeit@8.0.2/dist/index.umd.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+        <!-- TypeIt -->
+        <script>
+            new TypeIt("#typewriter", {
+                speed: 60,
+                waitUntilVisible: true,
+            })
+                .type("Want to contact me?")
+                .go();
+        </script>
+    </body>
+</html>
