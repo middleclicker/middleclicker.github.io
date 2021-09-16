@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Middleclicker's Website | About</title>
+        <link rel="stylesheet" href="css/common.css" type="text/css">
+        <link rel="stylesheet" href="css/about.css" type="text/css">
+        <meta content="Middleclicker's Website | About" property="og:title" />
+        <meta content="Middleclicker's personal website." property="og:description" />
+        <meta content="https://embed.com/this-is-the-site-url" property="og:url" />
+        <meta content="https://embed.com/embedimage.png" property="og:image" />
+        <meta content="#43B581" data-react-helmet="true" name="theme-color" />
+    </head>
+    <body>
+        <body>
+            <div class="navbar">
+                <img src="Assets/Navbar/Logo.png" style="position: absolute; height: 30px; padding-top:8px; padding-left: 20px">
+                <a class="active" href="/about.html">About</a>
+                <a href="/contact.html">Contact</a>
+                <a href="/projects.html">Projects</a>
+                <a href="/index.html">Home</a>
+            </div>
+
+            <div class="header">
+                <div class="text-wrapper">
+                    <h1 id="typewriter"></h1>
+                </div>
+                <div class="description">
+                    <p style="line-height: 2em;">Hi, I'm Middleclicker. I am a software developer who likes to do random projects. Most of these projects come from everyday problems or annoyances. I have experience in Java, C++, Python and Html/CSS. Coming from the anarchy community, I don't like to post a lot of information about me on the internet, so the about page will be quite empty (for now).</p>
+                    <p style="padding-top: 15px">Random facts about me:</p>
+                    <ul style="list-style: none; display:table; text-align: left; padding-left: 30%">
+                        <li>- I love dogs, a lot. Especially the big ones.</li>
+                        <li>- I live in China, but would love to live in the US some day.</li>
+                    </ul>
+                </div>
+                <img src="Assets/About/Doge.svg" style="width:250px">
+            </div>
+
+            <div class="footer">
+                <div class="footer-logo"></div>
+                <p class="footer-text">Copyright © 2021 by Middleclicker. All Rights Reserved.</p>
+            </div>
+
+            <!-- Javascript -->
+            <!-- Imports -->
+            <script src="https://unpkg.com/typeit@8.0.2/dist/index.umd.js"></script>
+
+            <!-- TypeIt -->
+            <script>
+                new TypeIt("#typewriter", {
+                    speed: 70,
+                    cursorSpeed: 700,
+                    waitUntilVisible: true,
+                })
+                    .type("About: ")
+                    .exec(async () => {
+                    //-- Return a promise that resolves after something happens.
+                        await new Promise((resolve, reject) => {
+                            setTimeout(() => {
+                                    return resolve();
+                                }, 1500);
+                        });
+                    })
+                    .type("Middleclicker")
+                    .go();
+            </script>
+        </body>
+    </body>
+</html>

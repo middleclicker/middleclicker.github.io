@@ -1,0 +1,33 @@
+.header {
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #2a2c2a;
+    color: white;
+    text-align: center;
+}
+
+#typewriter {
+    color: white;
+}
+
+.text-wrapper {
+    display: block;
+    padding-top: 150px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 23px;
+    color: white;
+    position: relative;
+}
+
+.description {
+    padding-top: 2px;
+    width: 40vw;
+    font-size: 15px;
+}
+
+li {
+    padding-bottom: 7px;
+    padding-top: 0px;
+}
