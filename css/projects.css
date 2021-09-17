@@ -55,9 +55,16 @@ html {
 }
 
 .fake-img {
-    background-color: white;
+    background-color: transparent;
     height: 500px;
     border-radius: 5px;
+}
+
+#piano-helper {
+    background-image: url("../Assets/Projects/Pianovisualizer.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #spacehack {
