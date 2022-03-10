@@ -69,11 +69,20 @@ html {
 
 #spacehack {
     background-image: url("../Assets/Projects/EndCrystalRender.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
 }
 
 #brainfuck-compiler {
     background-image: url("../Assets/Projects/Brainfuck-Compiler.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#ascii-generator {
+    background-image: url("../Assets/Projects/Ascii-Generator.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
