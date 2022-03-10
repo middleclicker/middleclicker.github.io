@@ -71,3 +71,8 @@ html {
     background-image: url("../Assets/Projects/EndCrystalRender.png");
     background-position: center;
 }
+
+#brainfuck-compiler {
+    background-image: url("../Assets/Projects/Brainfuck-Compiler.png");
+    background-position: center;
+}
