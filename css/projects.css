@@ -74,5 +74,7 @@ html {
 
 #brainfuck-compiler {
     background-image: url("../Assets/Projects/Brainfuck-Compiler.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
 }
