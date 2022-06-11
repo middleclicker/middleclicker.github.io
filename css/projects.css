@@ -87,3 +87,31 @@ html {
     background-repeat: no-repeat;
     background-position: center;
 }
+
+#diepbot {
+    background-image: url("../Assets/Projects/Diepbot.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#personal-website {
+    background-image: url("../Assets/Projects/personal-website.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#autoclicker {
+    background-image: url("../Assets/Projects/autoclicker.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#random-discord-bot {
+    background-image: url("../Assets/Projects/randomdiscordbot.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
