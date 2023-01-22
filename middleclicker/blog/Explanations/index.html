@@ -1,0 +1,75 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Explanations</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../../index.css"></head>
+  <body>
+    <div id="loading">
+      <div id="spinner"></div>
+    </div>
+    <a href="/" class="go_back"><i class="fas fa-arrow-left"></i></a>
+    <div id="background_overlay"></div>
+    <div id="background" style="background: url(top_image.jpeg) center;"></div>
+    <table id="profile_blog">
+      <tbody>
+        <tr>
+          <td style="width:8vw;"><div id="profile_img_blog"></div></td>
+          <td style="width:52vw;">
+            <div id="username_blog"></div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div id="blog-display">
+      <h1 id="blog_title">Explanations</h1>
+      <h2 id="blog_sub_title">A futile endeavor...</h2>
+      <div id="blog"><p id="para_0_original">Last night, my dreams were troubled by a wild pursuit of the mind...</p><p id="para_1_original">A wise man (me) once said, "there are two things that are eternal: the sex urge and the pursuit of wisdom." We have invented the word "curiosity" to describe something fundamentally routed in our brains- the urge to understand. So important is curiosity, in fact, that it is present in every intelligent organism we know of. Take my (deceased) dog, for instance. If you keep any object with a smell from him, he'll constantly harass you until you give it to him. Upon realizing that it isn't food, his interest instantly evaporates. Evolution has taught him a straightforward rule, "everything is food until proven otherwise," and it has worked pretty well.
+</p><p id="para_2_original">Humans are a bit more demanding. Instead of becoming uninterested, we want to peer into the object. We vow to explore every screw and bolt, every hinge and gear, every wire and solder... We don't stop at the surface; We only stop until all of the inner workings have been analyzed--only then can the object be considered "understood."
+</p><p id="para_3_original">Like many people, I once conformed to the idea that everything had an explanation. However, as I stepped into my 14th year on this planet, I started realizing my blunder. Relationships. When a relationship goes sour, the natural action everybody takes is to seek an explanation. However, they're also notoriously complicated. Each word you utter is the result of millions of interconnected synapses firing in your brain. How futile, therefore, to attempt to picture these events in a purely logical manner? 
+</p><p id="para_4_original">In some rare cases, we find them, but our mind is still not at ease. As Guy Winch once said in his speech, "Yet time and time again, when we are offered a simple and honest explanation..., we reject it." We jump down one rabbit hole after another, searching for a satisfying explanation like ancient men searching for the cure for aging. We try to make amends with ourselves by finding satisfying reasons--reasons which never existed. We endlessly dwell on past memories even though they make us cry inside.
+</p><p id="para_5_original"></p></div>
+    </div>
+    <div id="footer_blog">
+      <a href="https://github.com/imfunniee" target="_blank">made on earth by a human</a>
+    </div>
+    <script type="text/javascript">
+      setTimeout(function() {
+        document.getElementById("loading").classList.add("animated");
+        document.getElementById("loading").classList.add("fadeOut");
+        setTimeout(function() {
+          document.getElementById("loading").classList.remove("animated");
+          document.getElementById("loading").classList.remove("fadeOut");
+          document.getElementById("loading").style.display = "none";
+        }, 800);
+      }, 1500);
+      $.getJSON("../../config.json", function(user) {
+        var icon = document.createElement("link");
+        icon.setAttribute("rel", "icon");
+        icon.setAttribute("href", user[0].userimg);
+        icon.setAttribute("type", "image/png");
+        document.getElementsByTagName("head")[0].appendChild(icon);
+        document.getElementById(
+          "profile_img_blog"
+        ).style.background = `url('${user[0].userimg}') center center`;
+        document.getElementById(
+          "username_blog"
+        ).innerHTML = `<span style="display:${
+          user[0].name == null || !user[0].name ? "none" : "block"
+        };">${user[0].name}</span>@${user[0].username}<b id="blog_time"></b>`;
+
+        if ((user[0].theme = "dark.css")) {
+          document.querySelector("#background_overlay").style.background =
+            "linear-gradient(0deg, rgba(10, 10, 10, 1), rgba(10, 10, 10, 0.1))";
+        } else {
+          document.querySelector("#background_overlay").style.background =
+            "linear-gradient(0deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.1))";
+        }
+      });
+    </script>
+  
+
+</body></html>

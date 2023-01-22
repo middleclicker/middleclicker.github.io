@@ -1,0 +1,71 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Disabled - Wilfred Owens</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../../index.css"></head>
+  <body>
+    <div id="loading">
+      <div id="spinner"></div>
+    </div>
+    <a href="/" class="go_back"><i class="fas fa-arrow-left"></i></a>
+    <div id="background_overlay"></div>
+    <div id="background" style="background: url(top_image.jpeg) center;"></div>
+    <table id="profile_blog">
+      <tbody>
+        <tr>
+          <td style="width:8vw;"><div id="profile_img_blog"></div></td>
+          <td style="width:52vw;">
+            <div id="username_blog"></div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div id="blog-display">
+      <h1 id="blog_title">Disabled - Wilfred Owens</h1>
+      <h2 id="blog_sub_title">Capturing the tragedies of WWI</h2>
+      <div id="blog"><p id="para_0_original">The poem "Disabled" was written by Wilfred Owens. Owens uses this poem as a medium to present several of his emotions as a soldier who has returned from war.</p><p id="para_1_original">In the poem, Wilfred Owens expresses despair. He reveals that the once energetic teenager has lost his ability to move and sits around "waiting for dark." Here, "dark" can directly refer to the sky turning dark. However, a more convincing explanation is "dark" being linked to death. Owens also describes the soldier's "ghastly suit of grey" to the reader. Alliteration of the "g" sound in the words "ghastly" and "grey" forces air out of the mouth, which adds a whispery quality to the poem, helping create the gloomy mood of the poem. In addition, both words hold negative connotations and are commonly associated with grief and loss. Therefore, by describing the soldier's miserable life with imagery and metaphors, Owens shows the emotion of despair.</p><p id="para_2_original">Owens also expresses regret in the poem. In the fourth stanza, the author discusses the soldier's reasons for joining the war. The soldier said that after a drink, "he thought he'd better join. He wonders why." Using short sentences and a caesura after "join" slows down the poem's pace and shows the soldier reflecting on his decision. The thoughtful tone this creates helps illustrate the soldier's regret. The end-stop after "he wonders why" has the same effect, showing the soldier lost in thought on why he had joined the war. The reasons which follow are very foolish: "someone said he'd look a god in kilts," "maybe, too, to please his Meg." Apart from showing his naiveness, it indicates that the soldier had the romanticized image of war in his head: heroes, glory, and honor. The soldier undoubtedly realizes his mistake after losing his limbs, but the past cannot be changed. Therefore, the only thing that can happen is to regret his past decisions.</p><p id="para_3_original">In the poem, Owens also depicts the loneliness of the soldier. When the soldier came home, he was welcomed by "a solemn man who brought him fruits." The diction "solemn" creates a sense of isolation and disconnectedness from the world. Juxtaposition is used to compare the current scene to the "drums and cheers" the soldier received when he was drafted out. The welcome home was also nothing near the cheering he received when he scored a goal, contrasting pre-war and post-war life. Something which makes this story even more depressing is that the man "inquired about his soul," which is part of the job of a clergy member. Therefore, the only empathy the soldier received may have been insincere, making the reader feel pity for the soldier. This is how Owens expresses the soldier's loneliness to the reader.</p></div>
+    </div>
+    <div id="footer_blog">
+      <a href="https://github.com/imfunniee" target="_blank">made on earth by a human</a>
+    </div>
+    <script type="text/javascript">
+      setTimeout(function() {
+        document.getElementById("loading").classList.add("animated");
+        document.getElementById("loading").classList.add("fadeOut");
+        setTimeout(function() {
+          document.getElementById("loading").classList.remove("animated");
+          document.getElementById("loading").classList.remove("fadeOut");
+          document.getElementById("loading").style.display = "none";
+        }, 800);
+      }, 1500);
+      $.getJSON("../../config.json", function(user) {
+        var icon = document.createElement("link");
+        icon.setAttribute("rel", "icon");
+        icon.setAttribute("href", user[0].userimg);
+        icon.setAttribute("type", "image/png");
+        document.getElementsByTagName("head")[0].appendChild(icon);
+        document.getElementById(
+          "profile_img_blog"
+        ).style.background = `url('${user[0].userimg}') center center`;
+        document.getElementById(
+          "username_blog"
+        ).innerHTML = `<span style="display:${
+          user[0].name == null || !user[0].name ? "none" : "block"
+        };">${user[0].name}</span>@${user[0].username}<b id="blog_time"></b>`;
+
+        if ((user[0].theme = "dark.css")) {
+          document.querySelector("#background_overlay").style.background =
+            "linear-gradient(0deg, rgba(10, 10, 10, 1), rgba(10, 10, 10, 0.1))";
+        } else {
+          document.querySelector("#background_overlay").style.background =
+            "linear-gradient(0deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.1))";
+        }
+      });
+    </script>
+  
+
+</body></html>
