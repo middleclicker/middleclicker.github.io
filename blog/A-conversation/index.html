@@ -1,0 +1,71 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>A conversation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../../index.css"></head>
+  <body>
+    <div id="loading">
+      <div id="spinner"></div>
+    </div>
+    <a href="/" class="go_back"><i class="fas fa-arrow-left"></i></a>
+    <div id="background_overlay"></div>
+    <div id="background" style="background: url(top_image.png) center;"></div>
+    <table id="profile_blog">
+      <tbody>
+        <tr>
+          <td style="width:8vw;"><div id="profile_img_blog"></div></td>
+          <td style="width:52vw;">
+            <div id="username_blog"></div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div id="blog-display">
+      <h1 id="blog_title">A conversation</h1>
+      <h2 id="blog_sub_title">Saying "hello"</h2>
+      <div id="blog"><p id="para_0_original">“Hello” is perhaps the most harmless yet daunting word in the English dictionary. A marker for the beginning of a conversation, a realm where unease and anxiety dominate. What do I talk about? The question echoes in my head, yet my mind fills with an imperceptible blankness precisely in these situations. With every ticking second, I can feel my opportunity for a casual and comforting conversation slipping further away.</p><p id="para_1_original">During my primary and middle school years, I preferred silence over communication. I had a small circle of close friends—people I believed fulfilled all my social needs. That is perhaps flaw in Asian culture: you are never taught to talk to others unless absolutely necessary; and I followed that advice. My situation degraded to the point where my friends would humorously refer to me as “the dormitory sloth.”</p><p id="para_2_original">However, I wasn’t always like this. There was one event that sparked my downturn: It was an ordinary night and an ordinary party; the only unordinary part was that none of my best friends were there to attend. I was running late, and by the time I arrived, I walked in and saw a few of my acquaintances conversing at the counter.</p><p id="para_3_original">"You look weird today," I blurted out comedically as I approached. Silence ensued.</p><p id="para_4_original">"Oh, did you know I caught a giant fly yesterday?" I hastily added, retreating to another group. A long pause was followed by a lackluster response, "Um... okay.”</p><p id="para_5_original">I stepped back, perplexed by the lack of engagement. The question echoed in my mind: Why did they not respond? In my 10-year-old mind, I couldn't find a satisfactory answer. Feeling left out and dejected, I burst through the front door in tears. I believed I'd killed the conversation. That night, two painful truths were etched into my consciousness: killing a conversation is the worst feeling in the world—worse than being disliked or excluded—and I was ill-equipped for social interactions.</p><p id="para_6_original">I gradually started noticing the trend in other places and decided to begin winding down my social interactions. Clubs? No. Parties? Not a chance. Friend hangouts? Sorry, but no. I felt people would be better off without a conversation killer…</p><p id="para_7_original">I have to admit, being alone is miserable. It deprives you of social contact when even the best of friends grow distant from your constant attempts at distancing yourself. It deprives you of opportunities when you refuse to attend any club or activity requiring conversations. I was a miserable wreck, weak and sad. My sanity was dripping away, like a broken faucet that refuses to be fixed. After struggling my way through middle school, I decided one day that enough was enough: I was going to break out.</p><p id="para_8_original">I knew I had to start practicing, and practice I did. I started to gain even more insight into the art of conversation for high schoolers: observations were the substance, compliments were the seasoning, and passion was the driving agent. Most importantly, I learned how to be curious. I treated everyone as my teacher, attempting to learn different perspectives of the world from each person I met. I became more open—turns out, my classmates weren't soulless monsters who left me out for no reason—and started incorporating my own stories into the conversations. The people around me seemed to grow happier just as I did. Slowly and subtly, I transformed into an improved version of myself, overshadowing my negative, self-centered past. I enjoyed being around people! At that first high school party, I laughed like I hadn't done for 2 years…</p><p id="para_9_original">We are social creatures—so many people, as I did before, are terribly wrong in denying this, and I vowed to help everyone I could reach this marvelous realization. Throughout this entire journey, my only regrets lie in wasting my middle school years and failing to acknowledge the problem sooner. As Captain Jack Sparrow said: "The problem is not the problem. The problem is your attitude about the problem.”</p></div>
+    </div>
+    <div id="footer_blog">
+      <a href="https://github.com/imfunniee" target="_blank">made on earth by a human</a>
+    </div>
+    <script type="text/javascript">
+      setTimeout(function() {
+        document.getElementById("loading").classList.add("animated");
+        document.getElementById("loading").classList.add("fadeOut");
+        setTimeout(function() {
+          document.getElementById("loading").classList.remove("animated");
+          document.getElementById("loading").classList.remove("fadeOut");
+          document.getElementById("loading").style.display = "none";
+        }, 800);
+      }, 1500);
+      $.getJSON("../../config.json", function(user) {
+        var icon = document.createElement("link");
+        icon.setAttribute("rel", "icon");
+        icon.setAttribute("href", user[0].userimg);
+        icon.setAttribute("type", "image/png");
+        document.getElementsByTagName("head")[0].appendChild(icon);
+        document.getElementById(
+          "profile_img_blog"
+        ).style.background = `url('${user[0].userimg}') center center`;
+        document.getElementById(
+          "username_blog"
+        ).innerHTML = `<span style="display:${
+          user[0].name == null || !user[0].name ? "none" : "block"
+        };">${user[0].name}</span>@${user[0].username}<b id="blog_time"></b>`;
+
+        if ((user[0].theme = "dark.css")) {
+          document.querySelector("#background_overlay").style.background =
+            "linear-gradient(0deg, rgba(10, 10, 10, 1), rgba(10, 10, 10, 0.1))";
+        } else {
+          document.querySelector("#background_overlay").style.background =
+            "linear-gradient(0deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.1))";
+        }
+      });
+    </script>
+  
+
+</body></html>

@@ -3,16 +3,9 @@
   "username": "middleclicker",
   "name": "middleclicker",
   "userimg": "https://avatars.githubusercontent.com/u/60602265?v=4",
-  "sort": "created",
-  "order": "asc",
-  "includeFork": true,
-  "theme": "dark.css",
-  "types": [
-   "owner"
-  ],
-  "twitter": null,
-  "linkedin": null,
-  "medium": null,
-  "dribbble": null
+  "sort": null,
+  "order": null,
+  "includeFork": null,
+  "theme": "dark.css"
  }
 ]
