@@ -1,0 +1,68 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Restless Nights</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../../index.css"></head>
+  <body>
+    <div id="loading">
+      <div id="spinner"></div>
+    </div>
+    <a href="/" class="go_back"><i class="fas fa-arrow-left"></i></a>
+    <div id="background_overlay"></div>
+    <div id="background" style="background: url(top_image.webp) center;"></div>
+    <table id="profile_blog">
+      <tbody>
+        <tr>
+          <td style="width:8vw;"><div id="profile_img_blog"></div></td>
+          <td style="width:52vw;">
+            <div id="username_blog"></div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div id="blog-display">
+      <h1 id="blog_title">Restless Nights</h1>
+      <h2 id="blog_sub_title">"Sometimes, things don't go well"</h2>
+      <div id="blog"><p id="para_0_original">Sometimes, things don't go well.</p><p id="para_1_original">Sometimes, perfect things don't seem go your way; sometimes, perfect people don't want to stay; sometimes... sometimes...</p><p id="para_2_original">But most of the time, there is a cause: you failed a test because you didn't study, a fire broke out because you forgot to turn the stove off, some soldiers died because some dictator decided to declare war, etc., etc... The beautiful "because"--the world wouldn't make sense without one. Yet, the times when I struggle to find a cause--the times when the problem is so indescribably difficult to grapple with that a singular cause cannot be perceived--are the times I am truly impacted by the problems.</p><p id="para_3_original">The times were good! Late nights on the beach, smothering the cold with the warmth between two, living out the beautiful and mysterious love poetry you learned in grade school. A paradise on Earth, too precious for anyone else to feel. "How lucky I am," you say to yourself. She gently taps you on your shoulder, and you flinch a bit and look her way. A moment later, the sea gently plays the harmony of the waves while watching your lips and hers touch. Getting home, you replay that one song she likes. <i>Long nights, day dreams, sugar and smoke rings, I've been a fool, but strawberries and cigarettes always taste like you...</i></p><p id="para_4_original">Some restless nights, and we'll be forever.</p><p id="para_5_original">The hints start coming before the real event, just like how the weather becomes stale and hot and humid before the storm. The perfect puzzle pieces start sliding apart, first slowly, then suddenly. Some things you considered normal, like the "good mornings" and purposeless conversations become more and more infrequent. It's as if the universe is whispering to you, dropping subtle hints that something is amiss. Though, you still dismiss it.</p><p id="para_6_original">Some restless nights, and it will be over.</p><p id="para_7_original">Everything starts to require a purpose; why do we need to have this conversation? Why are you talking to me about this? Why do I need to know? Why should I care?... The answer is already set in stone there--a boulder resting on a ledge. You start to realise and appreciate the fragile relationship you've built up before; a little too fragile perhaps.</p><p id="para_8_original">Some restless nights, and it will be over.</p><p id="para_9_original">You can't resist it anymore. You speak up. "What's going on?" you say, "what did I do?!"</p><p id="para_10_original">"Nothing."</p><p id="para_11_original">A boring and uncontinuable reply; a subtle yet powerful signal. You probably didn't do anything terribly wrong or unbelievable or unacceptable. You didn't have to make a problem for there to be a problem. You, were the problem. Incompatibility, was the problem. "What about the reason? What about the beautiful 'because?'" you scream. Yet try as you might, no answer would be recieved. More time passes. The days turn into weeks, and the weeks into months.</p><p id="para_12_original">One day, you wake up. She says, "we're over." You quietly agree.</p><p id="para_13_original">The heaviness in your heart lingers, and the unanswered questions echo in your mind. You try to make sense of it all, seeking closure or understanding, but the pieces of the puzzle remain scattered and elusive.</p><p id="para_14_original">Some restless nights, and it will be over.</p><p id="para_15_original">People leave, feelings die, I guess that's the way of life. You start to make peace with that idea; slowly and silently, you start to find yourself again. The lingering feeling fades a bit more each time you open your eyes in the morning, the light at the end of the tunnel starts to become brighter. Too long in the dark, you're not accustomed to the brightness, but you walk forward nonetheless. You realise you still have friends who care about you; they understand and offer their deepest sympathies, because they've also been through it before. You become a normal person, living for yourself again and regaining that part of you who you trusted someone else for.</p><p id="para_16_original">"What was all that about? The sobbering nights and unrelenting thoughts," you say to yourself, "why were you being such a pussy?"</p><p id="para_17_original">Some restless nights, and it's over...</p></div>
+    </div>
+    <script type="text/javascript">
+      setTimeout(function() {
+        document.getElementById("loading").classList.add("animated");
+        document.getElementById("loading").classList.add("fadeOut");
+        setTimeout(function() {
+          document.getElementById("loading").classList.remove("animated");
+          document.getElementById("loading").classList.remove("fadeOut");
+          document.getElementById("loading").style.display = "none";
+        }, 800);
+      }, 1500);
+      $.getJSON("../../config.json", function(user) {
+        var icon = document.createElement("link");
+        icon.setAttribute("rel", "icon");
+        icon.setAttribute("href", user[0].userimg);
+        icon.setAttribute("type", "image/png");
+        document.getElementsByTagName("head")[0].appendChild(icon);
+        document.getElementById(
+          "profile_img_blog"
+        ).style.background = `url('${user[0].userimg}') center center`;
+        document.getElementById(
+          "username_blog"
+        ).innerHTML = `<span style="display:${
+          user[0].name == null || !user[0].name ? "none" : "block"
+        };">${user[0].name}</span>@${user[0].username}<b id="blog_time"></b>`;
+
+        if ((user[0].theme = "dark.css")) {
+          document.querySelector("#background_overlay").style.background =
+            "linear-gradient(0deg, rgba(10, 10, 10, 1), rgba(10, 10, 10, 0.1))";
+        } else {
+          document.querySelector("#background_overlay").style.background =
+            "linear-gradient(0deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.1))";
+        }
+      });
+    </script>
+
+
+</body></html>
