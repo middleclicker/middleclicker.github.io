@@ -5,47 +5,5 @@
   "sub_title": "From somewhere over the horizon...",
   "top_image": "top_image.jpeg",
   "visible": true
- },
- {
-  "url_title": "A-conversation",
-  "title": "A conversation",
-  "sub_title": "Saying \"hello\"",
-  "top_image": "top_image.png",
-  "visible": true
- },
- {
-  "url_title": "Dear-Professor",
-  "title": "Dear Professor",
-  "sub_title": "\"We are living in a lie\"",
-  "top_image": "top_image.jpeg",
-  "visible": true
- },
- {
-  "url_title": "Christmas",
-  "title": "Christmas",
-  "sub_title": "\"Christmas List\"",
-  "top_image": "top_image.webp",
-  "visible": true
- },
- {
-  "url_title": "Plane-Ticket",
-  "title": "Plane Ticket",
-  "sub_title": "\"A new life starts with a plane ticket\"",
-  "top_image": "top_image.jpeg",
-  "visible": true
- },
- {
-  "url_title": "A-Piano-Piece",
-  "title": "A Piano Piece",
-  "sub_title": "\"A bittersweet reunion\"",
-  "top_image": "top_image.jpeg",
-  "visible": true
- },
- {
-  "url_title": "Restless-Nights",
-  "title": "Restless Nights",
-  "sub_title": "\"Sometimes, things don't go well\"",
-  "top_image": "top_image.webp",
-  "visible": true
  }
 ]
