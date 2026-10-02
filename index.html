@@ -1,306 +1,165 @@
-<!DOCTYPE html><html lang="en"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>middleclicker</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/magic-grid/dist/magic-grid.min.js"></script>
-    <link rel="stylesheet" href="index.css">
-  <link rel="icon" href="https://avatars.githubusercontent.com/u/60602265?v=4" type="image/png"></head>
-
-  <body>
-    <div id="loading">
-      <div id="spinner"></div>
-    </div>
-    <div id="profile">
-      <div id="profile_img" style="background: url(https://avatars.githubusercontent.com/u/60602265?v=4) center;"></div>
-      <div id="username"><span style="display:block;">middleclicker</span><a href="https://github.com/middleclicker">@middleclicker</a></div>
-      <div id="userbio" style="display: block;">Life is good 🥰</div>
-      <div id="about">
-                <span style="display:block;"><i class="fas fa-users"></i> &nbsp;Andy Zhang</span>
-                <div id="responseContainer"></div>
-                <span style="display:block;"><i class="fas fa-envelope"></i> &nbsp; cxy20052008@gmail.com</span>
-                <span style="display:block;"><i class="fas fa-link"></i> &nbsp; <a href="https://middleclicker.github.io/">https://middleclicker.github.io/</a></span>
-                <span style="display:block;"><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; Shenzhen, China</span>
-                <span style="display:block;"><i class="fas fa-school"></i>&nbsp;&nbsp;<a href="https://www.scie.com.cn/">SCIE</a></span>
-                <div class="socials">
-                <span style="display:block;"><i class="fab fa-youtube"></i> &nbsp; <a href="https://www.youtube.com/channel/UCGDXzV2j5Jya7qgLU_asDrg">DaHampter</a></span>
-                <span style="display:block;"><i class="fab fa-instagram"></i> &nbsp; <a href="https://www.instagram.com/middleclicker/">middleclicker</a></span>
-                </div>
-                </div>
-      <a href="https://hits.sh/middleclicker.github.io/"><img alt="Hits" src="https://hits.sh/middleclicker.github.io.svg?style=for-the-badge&label=views&color=555"/></a>
-    </div>
-    <div id="display">
-      <div id="work">
-        <h1>Projects</h1>
-        <div class="projects" id="work_section">
-                        <a href="https://github.com/middleclicker/WechatScraper" target="_blank">
-                        <section>
-                            <div class="section_title">WechatScraper</div>
-                            <div class="about_section">
-                            <span style="display:block;">Scrapes your wechat chat history</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Jupyter Notebook</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 1</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/middleclicker/ZealotSniper" target="_blank">
-                        <section>
-                            <div class="section_title">ZealotSniper</div>
-                            <div class="about_section">
-                            <span style="display:block;">Snipes zealots for you with frozen scythe in hypixel skyblock with computer vision.</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 1</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/middleclicker/Wechat-Moments-Scraper" target="_blank">
-                        <section>
-                            <div class="section_title">Wechat-Moments-Scraper</div>
-                            <div class="about_section">
-                            <span style="display:block;">A program used to scrape and collect WeChat Moments data from your friends.</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 1</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/middleclicker/DogeClient" target="_blank">
-                        <section>
-                            <div class="section_title">DogeClient</div>
-                            <div class="about_section">
-                            <span style="display:block;">A Minecraft utility client for 1.12.2, used by shiba inus across the world!</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Java</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/middleclicker/middleclicker.github.io" target="_blank">
-                        <section>
-                            <div class="section_title">middleclicker.github.io</div>
-                            <div class="about_section">
-                            <span style="display:block;">Middleclicker's website</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; HTML</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/middleclicker/AStar" target="_blank">
-                        <section>
-                            <div class="section_title">AStar</div>
-                            <div class="about_section">
-                            <span style="display:block;">A* Pathfinding Algorithm Practice</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Java</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/middleclicker/Valentine-Heart" target="_blank">
-                        <section>
-                            <div class="section_title">Valentine-Heart</div>
-                            <div class="about_section">
-                            <span style="display:block;">A text-art heart for your valentines &lt;3</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Java</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/middleclicker/ASCII-Console-Art" target="_blank">
-                        <section>
-                            <div class="section_title">ASCII-Console-Art</div>
-                            <div class="about_section">
-                            <span style="display:block;">Color can only be seen in console</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Java</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/middleclicker/Brainfuck-Compiler" target="_blank">
-                        <section>
-                            <div class="section_title">Brainfuck-Compiler</div>
-                            <div class="about_section">
-                            <span style="display:block;">In java</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Java</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/middleclicker/Diepbot" target="_blank">
-                        <section>
-                            <div class="section_title">Diepbot</div>
-                            <div class="about_section">
-                            <span style="display:block;">Diep.io bot</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Java</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 1</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 1</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/middleclicker/Doge" target="_blank">
-                        <section>
-                            <div class="section_title">Doge</div>
-                            <div class="about_section">
-                            <span style="display:block;">Repository for Doge's website.</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; HTML</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/middleclicker/IGCSE-Geography" target="_blank">
-                        <section>
-                            <div class="section_title">IGCSE-Geography</div>
-                            <div class="about_section">
-                            <span style="display:none;">undefined</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:none;"><i class="fas fa-code"></i>&nbsp; null</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/middleclicker/middleclicker" target="_blank">
-                        <section>
-                            <div class="section_title">middleclicker</div>
-                            <div class="about_section">
-                            <span style="display:none;">undefined</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:none;"><i class="fas fa-code"></i>&nbsp; null</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/middleclicker/Python-Autoclicker" target="_blank">
-                        <section>
-                            <div class="section_title">Python-Autoclicker</div>
-                            <div class="about_section">
-                            <span style="display:block;">Simple autoclicker coded in python (featuring click sounds).</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/middleclicker/Random-Discord-Bot" target="_blank">
-                        <section>
-                            <div class="section_title">Random-Discord-Bot</div>
-                            <div class="about_section">
-                            <span style="display:block;">Discord bot for messing around with friends.</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Java</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a></div>
-      </div>
-      <div id="forks" style="display:none;">
-        <h1>Forks.</h1>
-        <div class="projects" id="forks_section"></div>
-      </div>
-      <div id="blog_section">
-        <h1>Writing</h1>
-        <div id="blogs"></div>
-      </div>
-    </div>
-    <script type="text/javascript">
-      setTimeout(function() {
-        document.getElementById("loading").classList.add("animated");
-        document.getElementById("loading").classList.add("fadeOut");
-        setTimeout(function() {
-          document.getElementById("loading").classList.remove("animated");
-          document.getElementById("loading").classList.remove("fadeOut");
-          document.getElementById("loading").style.display = "none";
-        }, 800);
-      }, 1500);
-      $.getJSON("blog.json", function(blog) {
-        blog = blog || [];
-        if (blog.length == 0) {
-          return (document.getElementById("blog_section").style.display =
-            "none");
-        }
-        for (var i = 0; i < blog.length; i++) {
-          $("#blogs").append(`
-            <a href="./blog/${blog[i].url_title}/" target="_blank">
-                <section>
-                    <img src="./blog/${blog[i].url_title}/${blog[i].top_image}">
-                    <div class="blog_container">
-                        <div class="section_title">${blog[i].title}</div>
-                        <div class="about_section">
-                            ${blog[i].sub_title}
-                        </div>
-                    </div>
-                </section>
-            </a>
-            `);
-        }
-      }).fail(function() {
-        return (document.getElementById("blog_section").style.display = "none");
-      });
-    </script>
-
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Andy Zhang, a student at Swarthmore College. A little home for my projects, code, and experiments.">
+    <meta name="theme-color" content="#f6f3eb">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Andy Zhang · middleclicker">
+    <meta property="og:description" content="A little home for my projects, code, and experiments. Come take a look around.">
+    <meta property="og:url" content="https://middleclicker.github.io/">
+    <title>Andy Zhang · middleclicker</title>
+    <link rel="canonical" href="https://middleclicker.github.io/">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="preload" href="assets/fonts/lora.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/dm-sans.woff2" as="font" type="font/woff2" crossorigin>
     <script>
-      const magicProjectsGrid = new MagicGrid({
-        container: "#work_section",
-        animate: false,
-        gutter: 30, // default gutter size
-        static: true,
-        useMin: false,
-        maxColumns: 2,
-        useTransform: true
-      });
-
-      const magicForksGrid = new MagicGrid({
-        container: "#forks_section",
-        animate: false,
-        gutter: 30, // default gutter size
-        static: true,
-        useMin: false,
-        maxColumns: 2,
-        useTransform: true
-      });
-
-      $("document").ready(() => {
-        magicProjectsGrid.listen();
-        magicForksGrid.listen();
-      });
+      try {
+        if (localStorage.getItem('middleclicker-theme') === 'evening') {
+          document.documentElement.dataset.theme = 'evening';
+        }
+      } catch (_) {}
     </script>
-</body></html>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <symbol id="icon-moon" viewBox="0 0 24 24"><path d="M20.5 13.5A8.5 8.5 0 0 1 10.5 3.5 8.5 8.5 0 1 0 20.5 13.5Z"/></symbol>
+      <symbol id="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></symbol>
+      <symbol id="icon-folder" viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h5l2 3h7a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/><path d="M3 11h18"/></symbol>
+      <symbol id="icon-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 11h18m-14 4h2m2 0h2m2 0h2m-10 3h2m2 0h2"/></symbol>
+      <symbol id="icon-audio" viewBox="0 0 24 24"><path d="M3 10v4m4-8v12m5-16v20m5-16v12m4-8v4"/></symbol>
+      <symbol id="icon-browser" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18m-8 8v-5m-4 5v-2m8 2v-3"/><path d="M6 6.5h.01m3 0h.01"/></symbol>
+      <symbol id="icon-play" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 5 3-5 3Z"/></symbol>
+      <symbol id="icon-chat" viewBox="0 0 24 24"><path d="M21 11a8 8 0 0 1-8 8H7l-4 3v-7a8 8 0 0 1 7-12h3a8 8 0 0 1 8 8Z"/><path d="M7 10h10m-10 4h6"/></symbol>
+      <symbol id="icon-path" viewBox="0 0 24 24"><circle cx="5" cy="5" r="2"/><circle cx="19" cy="19" r="2"/><path d="M5 7v7a5 5 0 0 0 5 5h7M12 5h5a2 2 0 0 1 2 2v5"/></symbol>
+      <symbol id="icon-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+      <symbol id="icon-github" viewBox="0 0 24 24"><path d="M9 19c-4 1-4-2-6-2m12 5v-4a3.5 3.5 0 0 0-1-2.7c3.3-.4 6.7-1.6 6.7-7.3A5.7 5.7 0 0 0 19 4a5.3 5.3 0 0 0-.1-4s-1.3-.4-4.2 1.6a14 14 0 0 0-7.4 0C4.4-.4 3.1 0 3.1 0A5.3 5.3 0 0 0 3 4a5.7 5.7 0 0 0-1.7 4c0 5.7 3.4 6.9 6.7 7.3A3.5 3.5 0 0 0 7 18v4" transform="translate(2 1) scale(.85)"/></symbol>
+      <symbol id="icon-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></symbol>
+    </svg>
+
+    <header class="site-header shell">
+      <a class="brand" href="#home" aria-label="middleclicker home">middleclicker<span>.</span></a>
+      <nav class="navigation" aria-label="Main navigation">
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#contact">Say hello</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Switch to evening colors" title="Switch to evening colors" hidden>
+        <svg class="icon theme-moon" aria-hidden="true"><use href="#icon-moon"/></svg>
+        <svg class="icon theme-sun" aria-hidden="true"><use href="#icon-sun"/></svg>
+      </button>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <section class="hero shell" id="home" aria-labelledby="hello-title">
+        <div class="hero-copy">
+          <p class="eyebrow">A little corner of the internet</p>
+          <h1 id="hello-title">Hi, I'm Andy.<br><em>Glad you're here.</em></h1>
+          <p class="hero-description">I'm Andy Zhang, a student at <a href="https://www.swarthmore.edu/">Swarthmore College</a> and <a href="https://github.com/middleclicker">middleclicker</a> online. I build little tools, play with ideas, and turn curiosity into code.</p>
+          <div class="hero-actions">
+            <a class="button" href="#projects"><svg class="icon" aria-hidden="true"><use href="#icon-folder"/></svg>Explore my projects</a>
+            <a class="quiet-link" href="https://github.com/middleclicker"><svg class="icon" aria-hidden="true"><use href="#icon-github"/></svg>Find me on GitHub</a>
+          </div>
+          <p class="little-note">Life is good. <span aria-hidden="true">✳</span></p>
+        </div>
+        <figure class="hero-art">
+          <div class="picture-frame">
+            <img src="assets/cozy-desk.webp" width="1448" height="1086" fetchpriority="high" alt="A painted wooden desk with a laptop, books, plants, and a steaming mug beside a sunlit window.">
+          </div>
+          <figcaption>A little space to make things.</figcaption>
+        </figure>
+      </section>
+
+      <section class="projects-section shell" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Made with curiosity</p>
+            <h2 id="projects-title">Things I've been making<span class="accent-dot">.</span></h2>
+            <p>A few useful tools, a few experiments, and a lot of learning along the way.</p>
+          </div>
+          <a class="text-link" href="https://github.com/middleclicker?tab=repositories">All projects on GitHub</a>
+        </div>
+        <div class="project-grid">
+          <article class="project-card featured-project">
+            <div class="card-top"><span class="project-icon moss"><svg class="icon" aria-hidden="true"><use href="#icon-calendar"/></svg></span><span class="project-category">For campus life</span></div>
+            <h3><a href="https://middleclicker.github.io/SwatPlanPublic/">SwatPlan</a></h3>
+            <p>A home for your Swarthmore semester. Plan courses, organize tasks, and make room for the rest of your day.</p>
+            <div class="card-bottom"><span class="language">Swift</span><span class="project-kind">App &amp; course planner</span></div>
+          </article>
+          <article class="project-card">
+            <div class="card-top"><span class="project-icon clay"><svg class="icon" aria-hidden="true"><use href="#icon-audio"/></svg></span><span class="project-category">A useful little tool</span></div>
+            <h3><a href="https://github.com/middleclicker/SoundBridge">SoundBridge</a></h3>
+            <p>One audio source, multiple speakers. Route sound with individual volume and delay controls to keep everything in sync.</p>
+            <div class="card-bottom"><span class="language">Python</span><span class="project-kind">Audio utility</span></div>
+          </article>
+          <article class="project-card">
+            <div class="card-top"><span class="project-icon honey"><svg class="icon" aria-hidden="true"><use href="#icon-browser"/></svg></span><span class="project-category">Following the patterns</span></div>
+            <h3><a href="https://github.com/middleclicker/BrowserHistory">BrowserHistory</a></h3>
+            <p>Turn browser history into charts. A small project for seeing the patterns in where you spend your time online.</p>
+            <div class="card-bottom"><span class="language">Python</span><span class="project-kind">Data visualization</span></div>
+          </article>
+          <article class="project-card">
+            <div class="card-top"><span class="project-icon honey"><svg class="icon" aria-hidden="true"><use href="#icon-play"/></svg></span><span class="project-category">An internet experiment</span></div>
+            <h3><a href="https://github.com/middleclicker/SlopOrNot">Slop or Not?</a></h3>
+            <p>A place to rate YouTube channels as AI slop—or not—and see how other people vote.</p>
+            <div class="card-bottom"><span class="language">JavaScript</span><span class="project-kind">Community voting</span></div>
+          </article>
+          <article class="project-card">
+            <div class="card-top"><span class="project-icon moss"><svg class="icon" aria-hidden="true"><use href="#icon-chat"/></svg></span><span class="project-category">From the workbench</span></div>
+            <h3><a href="https://github.com/middleclicker/Wechat-Moments-Scraper">WeChat Moments Scraper</a></h3>
+            <p>A Python experiment for collecting and exploring WeChat Moments data.</p>
+            <div class="card-bottom"><span class="language">Python</span><span class="project-kind">Data collection</span></div>
+          </article>
+          <article class="project-card">
+            <div class="card-top"><span class="project-icon clay"><svg class="icon" aria-hidden="true"><use href="#icon-path"/></svg></span><span class="project-category">Learning by doing</span></div>
+            <h3><a href="https://github.com/middleclicker/AStar">A* Pathfinding</a></h3>
+            <p>Finding a way from here to there. An implementation of the A* search algorithm, written as a Java learning project.</p>
+            <div class="card-bottom"><span class="language">Java</span><span class="project-kind">Algorithms</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="about-section shell" id="about" aria-labelledby="about-title">
+        <div class="about-heading">
+          <p class="eyebrow">The person behind the pixels</p>
+          <h2 id="about-title">A little about me<span class="accent-dot">.</span></h2>
+          <span class="about-signature">Andy Zhang</span>
+          <span class="about-handle">aka middleclicker</span>
+        </div>
+        <div class="about-copy">
+          <p>I'm a student at <a href="https://www.swarthmore.edu/">Swarthmore College</a>. My projects range from tools for everyday life to experiments with audio, data, and games.</p>
+          <p>I like being able to take an idea and make something you can actually use. This little site is where those projects live, with room for whatever comes next.</p>
+          <div class="about-details"><span>Currently at <strong>Swarthmore</strong></span><span>Usually online as <strong>@middleclicker</strong></span></div>
+        </div>
+      </section>
+
+      <section class="contact-section shell" id="contact" aria-labelledby="contact-title">
+        <div class="contact-panel">
+          <div>
+            <p class="eyebrow">The door is always open</p>
+            <h2 id="contact-title">Let's say hello<span>.</span></h2>
+            <p>Have an idea, a question, or just a friendly hello? I'd love to hear from you.</p>
+          </div>
+          <a class="button contact-button" href="mailto:cxy20052008@gmail.com"><svg class="icon" aria-hidden="true"><use href="#icon-mail"/></svg>Send me an email</a>
+        </div>
+        <div class="social-links" aria-label="Find me elsewhere">
+          <span>Elsewhere on the internet</span>
+          <a href="https://github.com/middleclicker"><svg class="icon" aria-hidden="true"><use href="#icon-github"/></svg>GitHub</a>
+          <a href="https://www.instagram.com/middleclicker/"><svg class="icon" aria-hidden="true"><use href="#icon-instagram"/></svg>Instagram</a>
+          <a href="https://www.youtube.com/channel/UCGDXzV2j5Jya7qgLU_asDrg"><svg class="icon" aria-hidden="true"><use href="#icon-play"/></svg>YouTube</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer shell">
+      <p>© <span id="year">2026</span> Andy Zhang</p>
+      <p>Thanks for stopping by. <span class="footer-star" aria-hidden="true">✳</span></p>
+      <a href="#home">Back to the top</a>
+    </footer>
+  </body>
+</html>
