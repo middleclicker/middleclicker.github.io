@@ -4,21 +4,22 @@
   const themeColor = document.querySelector('meta[name="theme-color"]');
 
   const updateThemeButton = () => {
-    const evening = root.dataset.theme === 'evening';
-    const label = evening ? 'Switch to daylight colors' : 'Switch to evening colors';
+    const dimmed = root.dataset.theme === 'embers';
+    const label = dimmed ? 'Bring up the firelight' : 'Dim the lights';
     themeButton.setAttribute('aria-label', label);
     themeButton.title = label;
-    themeColor?.setAttribute('content', evening ? '#222b25' : '#f6f3eb');
+    themeButton.querySelector('.theme-label').textContent = dimmed ? 'Firelight' : 'Dim lights';
+    themeColor?.setAttribute('content', dimmed ? '#120e0c' : '#1b1410');
   };
 
   if (themeButton) {
     themeButton.hidden = false;
     updateThemeButton();
     themeButton.addEventListener('click', () => {
-      const theme = root.dataset.theme === 'evening' ? 'daylight' : 'evening';
+      const theme = root.dataset.theme === 'embers' ? 'firelight' : 'embers';
       root.dataset.theme = theme;
       try {
-        localStorage.setItem('middleclicker-theme', theme);
+        localStorage.setItem('middleclicker-hearth', theme);
       } catch (_) {}
       updateThemeButton();
     });

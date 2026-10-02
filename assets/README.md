@@ -1,6 +1,14 @@
 # Asset notes
 
-## Illustration
+## Current fireplace scene
+
+`fireside-room.webp` was generated with the built-in image generation tool and converted to WebP for static delivery. The original PNG is preserved outside the repository.
+
+Final generation prompt:
+
+> Use case: photorealistic-natural. Asset type: a wide background photograph for a personal website with the feeling of sitting beside a fireplace. Primary request: an intimate old cottage sitting room at night, lit by a real wood fire in a red-brown brick hearth, with a dark walnut mantel, a few worn books, a low russet upholstered armchair at the edge of the frame, and a soft wool rug. The fireplace is the main visual subject, on the right half of the composition; the left half is a very dark, quiet walnut-brown wall and dim room, suitable for overlaying website copy. Style: beautiful natural editorial interior photography, 35mm film character, subtle grain, deep soft shadows, tactile brick and timber, slightly hazy warm light, restrained and lived-in. Composition: wide landscape 3:2, medium-wide eye-level view; the entire hearth opening and some of the surrounding room are visible, not a close-up of flames. Lighting: only warm golden amber and ember-red firelight, intimate, restful, inviting, no daylight, realistic flames and soft light falling onto nearby materials. Palette: deep espresso brown, soot charcoal, aged brick red, glowing honey amber. Constraints: no people, no text, no logos, no watermark, no UI, no decorative picture border; maintain dark left negative space and a clearly visible fireplace on the right.
+
+## Previous illustration
 
 `cozy-desk.webp` was generated with the built-in image generation tool, then converted to WebP for efficient static delivery. The original generated file is preserved outside the repository.
 
@@ -10,9 +18,10 @@ Final generation prompt:
 
 ## Fonts
 
-DM Sans and Lora are self-hosted variable fonts from the Google Fonts repository, converted to WOFF2. Both are licensed under the SIL Open Font License. The complete license texts are in `fonts/DM-Sans-OFL.txt` and `fonts/Lora-OFL.txt`.
+DM Sans and Cormorant Garamond are the current self-hosted variable fonts, converted to WOFF2. Lora is retained from the previous design. All are from the Google Fonts repository and licensed under the SIL Open Font License. The complete license texts are in `fonts/DM-Sans-OFL.txt`, `fonts/Cormorant-Garamond-OFL.txt`, and `fonts/Lora-OFL.txt`.
 
 - DM Sans: https://github.com/google/fonts/tree/main/ofl/dmsans
+- Cormorant Garamond: https://github.com/google/fonts/tree/main/ofl/cormorantgaramond
 - Lora: https://github.com/google/fonts/tree/main/ofl/lora
 
 `favicon.svg` is a simple initial mark. `grain.svg` provides a subtle paper texture. The small interface icons are inline SVG in `index.html`.
