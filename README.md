@@ -24,7 +24,7 @@ Project cards are intentionally curated in HTML rather than fetched from the Git
 
 ## Publish
 
-Push to `main`. GitHub Pages is configured to deploy from `main` at the repository root. `.nojekyll` lets GitHub serve the static files directly. No additional hosting is needed.
+Push to `main`. GitHub Pages is configured to deploy from `main` at the repository root. `.nojekyll` lets GitHub serve the static files directly. No additional hosting is needed. After changing CSS or JavaScript, increment the `?v=` asset version in the HTML to refresh cached assets for returning visitors.
 
 The old writing pages have been removed from the published site. Earlier versions remain recoverable in Git history.
 
